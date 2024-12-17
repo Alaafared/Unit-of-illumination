@@ -192,7 +192,7 @@ const questions = [
           "عند توصيل جهاز قياس ميكرو أميتر لقياس الامبير", 
          " فان تيار صغير يسري بداخله يتناسب هذا التيار مع شد ة االضاءة الساقطة على الخلية ",
          "يتم تدريج جهاز اللوكسميتر مباشرة للقياس بوحده اللوكس",
-         "مكن عمل تيارات اخرى للقياس وذلك بزياد ة مدى القياس",
+         "ممكن عمل تيارات اخرى للقياس وذلك بزياد ة مدى القياس",
          "كل ما سبق"
            
         ], 
@@ -306,11 +306,14 @@ function submitQuiz() {
     const resultContainer = document.getElementById("result");
     resultContainer.style.display = "block";
     resultContainer.innerHTML = `لقد حصلت على <strong>${score}/${shuffledQuestions1.length}</strong>`;
+    let element = document.querySelector('.custom-subtitle');
 
     if (score === shuffledQuestions1.length) {
         resultContainer.innerHTML += "<br>رائع! إجاباتك كلها صحيحة! مع تمنياتي للجميع بالتفوق  أ / علاء فريد";
+        element.style.display = 'none';
     } else {
         resultContainer.innerHTML += "<br>يمكنك تحسين أدائك في المرة القادمة . مع تمنياتي للجميع بالتفوق  أ / علاء فريد";
+        element.style.display = 'none';
     }
 
     document.getElementById("quiz-container").style.display = "none";
