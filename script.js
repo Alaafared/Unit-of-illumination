@@ -291,7 +291,7 @@ function nextQuestion() {
             submitQuiz();
         }
         isTransitioning = false; // إعادة تعيين حالة الانتقال بعد التحميل
-    }, 2000); // الانتقال للسؤال التالي بعد ثانيتين
+    }, 1000); // الانتقال للسؤال التالي بعد ثانيتين
 }
 
 function submitQuiz() {
