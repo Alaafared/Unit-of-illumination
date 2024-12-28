@@ -66,6 +66,27 @@ label:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.units-container {
+    display: flex; /* لترتيب الأزرار بجانب بعضها */
+    gap: 10px; /* لإضافة مسافة بين الأزرار */
+    justify-content: center; /* توسيط الأزرار أفقيًا */
+}
+
+.unit-button {
+    display: inline-block; /* لجعل الرابط يأخذ شكل كتلة */
+    padding: 10px 20px; /* لإضافة مساحة داخل الزر */
+    background-color: #4CAF50; /* لون الخلفية */
+    color: white; /* لون النص */
+    text-decoration: none; /* لإزالة التسطير من الرابط */
+    border: none; /* لإزالة الحدود */
+    border-radius: 5px; /* لجعل الزوايا دائرية */
+    cursor: pointer; /* لتغيير شكل مؤشر الماوس عند المرور فوق الزر */
+    transition: background-color 0.3s ease; /* لإضافة تأثير انتقالي للون الخلفية */
+}
+
+.unit-button:hover {
+    background-color: #45a049; /* لون الخلفية عند التمرير */
+}
 
 /* الأزرار */
 button {
